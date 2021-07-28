@@ -7,7 +7,7 @@ class CallingCard {
   
     addDollars(dollar) {
      const amount = (dollar * 100);
-     const minute = (amount / this.centsPerMinute);
+     const minute = Math.trunc((amount / this.centsPerMinute));
      return this.totalMinutes += minute;
   
     }
